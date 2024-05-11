@@ -4,10 +4,10 @@ import classNames from 'classnames/bind'
 
 const cn = classNames.bind(styles)
 
-const HomePage = () => {
+const HomeClientPage = () => {
   return (
-    <main>Hello, World</main>
+    <section></section>
   )
 }
 
-export default HomePage
+export default HomeClientPage

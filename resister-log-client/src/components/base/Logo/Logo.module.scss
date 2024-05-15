@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .image {
+    border-radius: 8px;
+    margin-right: .8rem;
+  }
+
+  .text {
+    font-size: 1.575rem;
+    font-weight: 500;
+    font-family: monospace;
+  }
+}

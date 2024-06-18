@@ -1,7 +1,7 @@
 'use client'
 import React, { Fragment, ReactNode } from 'react'
-import Header from '@/layout/Header'
-import Footer from '@/layout/Footer'
+import Header from '@/components/layout/header/Header'
+import Footer from '@/components/layout/footer/Footer'
 
 const Layout = ({ children }: { children: ReactNode }) => {
   return (

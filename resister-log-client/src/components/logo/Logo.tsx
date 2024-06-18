@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import ResisterboyImage from '@/assets/image/resisterboy.png'
-import styles from '@/components/base/Logo/Logo.module.scss'
+import styles from '@/components/Logo/Logo.module.scss'
 import classNames from 'classnames/bind'
 import Link from 'next/link'
 

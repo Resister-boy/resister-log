@@ -1,7 +1,7 @@
 'use client'
 import React, { Fragment, ReactNode } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Layout from '@/layout';
+import Layout from '@/components/layout';
 
 const queryClient = new QueryClient();
 

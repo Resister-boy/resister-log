@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import styles from '@/layout/Header/header.module.scss'
+import styles from '@/components/layout/Header/header.module.scss'
 import classNames from 'classnames/bind'
-import Logo from '@/components/base/Logo'
+import Logo from '@/components/logo/Logo'
 
 const cn = classNames.bind(styles)
 

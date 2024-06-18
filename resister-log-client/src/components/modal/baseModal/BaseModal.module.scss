@@ -1,0 +1,43 @@
+.container-base {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  user-select: none;
+  z-index: 9999;
+}
+
+.container-dark {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.33);
+  user-select: none;
+  z-index: 9999;
+}
+
+.container-blur {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  user-select: none;
+  z-index: 9999;
+}
+
+.container-blur-dark {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.33);
+  z-index: 9999;
+}

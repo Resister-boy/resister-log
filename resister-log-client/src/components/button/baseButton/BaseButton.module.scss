@@ -1,0 +1,45 @@
+.container-fill {
+  width: 100%;
+  min-width: 6.5rem;
+  height: 100%;
+  min-height: 1.65rem;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid var(--PRIMARY);
+  background-color: var(--PRIMARY);
+  color: #ffffff;
+
+  &:hover {
+    background-color: #ffffff;
+    color: var(--PRIMARY);
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: var(--PRIMARY);
+  }
+}
+
+.container-outline {
+  width: 100%;
+  min-width: 6.5rem;
+  height: 100%;
+  min-height: 1.65rem;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid var(--PRIMARY);
+  background-color: var(--LIGHT);
+  color: var(--PRIMARY);
+
+  &:hover {
+    background-color: var(--PRIMARY);
+    color: var(--LIGHT);
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: #ffffff;
+    color: var(--PRIMARY);
+  }
+}

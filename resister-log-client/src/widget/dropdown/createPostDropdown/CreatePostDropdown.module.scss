@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+  position: relative;
+
+  .create-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--LIGHT-GRAY-2);
+    }
+  }
+
+  .create-list {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, calc(100% + 10px));
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+    background-color: var(--LIGHT);
+    display: none;
+    box-shadow: 0px 3px 3px 1px var(--GRAY-OPACITY-7);
+    border-top: 1px solid var(--PRIMARY);
+    .create-list-inner {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      .list-item {
+        width: 12.25rem;
+        height: 2.85rem;
+        margin: 0 0.2rem 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: var(--LIGHT);
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        font-size: 1.025rem;
+        font-weight: 500;
+        padding-left: 2rem;
+
+        &:first-child {
+          margin: 0.2rem 0.2rem 0 0.2rem;
+        }
+
+        &:last-child {
+          margin: 0 0.2rem 0.2rem 0.2rem;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: var(--PRIMARY);
+          background-color: var(--PRIMARY-OPACITY-2);
+        }
+      }
+    }
+  }
+
+  .create-list-show {
+    display: block;
+  }
+
+  .create-list-hide {
+    animation-name: hide-list;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes hide-list {
+  0% {
+    opacity: 1;
+    display: block;
+    height: auto;
+  }
+  30% {
+    opacity: 7;
+    display: block;
+    height: 4.5rem;
+  }
+  50% {
+    opacity: 0.4;
+    display: block;
+    height: 0;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    display: none;
+  }
+}

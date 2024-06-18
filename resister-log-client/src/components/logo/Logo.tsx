@@ -9,9 +9,10 @@ const cn = classNames.bind(styles)
 
 type LogoProps = {
   withImage?: boolean;
+  withText?: boolean;
 }
 
-const Logo = ({ withImage = true }: LogoProps) => {
+const Logo = ({ withImage = true, withText = true }: LogoProps) => {
   return (
     <Link href={'/'}>
       <div className={cn('container')}>
@@ -19,12 +20,12 @@ const Logo = ({ withImage = true }: LogoProps) => {
           <Image
             src={ResisterboyImage}
             alt='Logo'
-            width={48}
-            height={48}
+            width={200}
+            height={200}
             className={cn('image')}
           />
         )}
-        <span className={cn('text')}>RESISTER-BOY.LOG</span>
+        {withText && <span className={cn('text')}>RESISTER-BOY.LOG</span>}
       </div>
     </Link>
 

@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+
+  .title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .title {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+  }
+
+  .search-container {
+    display: flex;
+    align-items: flex-start;
+    justify-tracks: space-between;
+
+    .book-container {
+      margin-left: 4rem;
+    }
+  }
+}

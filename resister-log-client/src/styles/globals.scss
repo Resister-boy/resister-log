@@ -1,4 +1,9 @@
-:root {}
+@use '@/styles/_theme.scss' as *;
+@import '@/styles/_color.scss';
+
+:root {
+  --font-family: sans-serif;
+}
 
 * {
   box-sizing: border-box;
@@ -6,9 +11,12 @@
   margin: 0;
 }
 
-html,
+html {
+  font-size: 12px;
+}
+
 body {
-  max-width: 100vw;
+  font-family: var(--font-family);
 }
 
 a {

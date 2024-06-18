@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+
+  .checkbox {
+    width: 1.25rem;
+    height: 1.25rem;
+    &:hover {
+      outline: var(--PRIMARY);
+      border: 1px solid var(--PRIMARY);
+      background-color: var(--PRIMARY-OPACITY-8);
+    }
+
+    &:active {
+      background-color: var(--PRIMARY-OPACITY-8);
+    }
+  }
+
+  .text {
+    font-size: 1rem;
+    margin-left: 0.4rem;
+    user-select: none;
+  }
+}

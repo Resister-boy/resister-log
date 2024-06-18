@@ -1,0 +1,190 @@
+.container {
+  width: 28rem;
+  height: 4.15rem;
+  background-color: var(--LIGHT);
+  z-index: 999;
+  box-shadow: 0px 6px 6px var(--GRAY-OPACITY-9);
+  padding: 1rem;
+  position: relative;
+
+  .text-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .text {
+      text-align: start;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+  }
+
+  .button-container {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    z-index: 99;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .svg-icon {
+      width: 12px;
+      height: 12px;
+      stroke: var(--DARK-GRAY-2);
+    }
+  }
+}
+
+.container-top {
+  position: fixed;
+  top: 6rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 2px solid var(--PRIMARY);
+  animation-name: appearFromTop;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.container-right {
+  position: fixed;
+  top: 8rem;
+  right: 4rem;
+  transform: translate(100%, 0);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-left: 2px solid var(--PRIMARY);
+  animation-name: appearFromRight;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.container-bottom {
+  position: fixed;
+  bottom: 4rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 2px solid var(--PRIMARY);
+  animation-name: appearFromBottom;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.container-top-hide {
+  animation-name: disappearToTop;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.container-right-hide {
+  animation-name: disappearToRight;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.container-bottom-hide {
+  animation-name: disappearToBottom;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appearFromTop {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translate(-50%, -120%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateY(-50%, 0%);
+  }
+}
+
+@keyframes appearFromRight {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translate(120%, 0);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translate(0%, 0);
+  }
+}
+
+@keyframes appearFromBottom {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translate(-50%, 120%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+}
+
+@keyframes disappearToTop {
+  0% {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: translate(-50%, -120%);
+  }
+}
+
+@keyframes disappearToRight {
+  0% {
+    display: block;
+    opacity: 1;
+    transform: translate(0%, 0);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: translate(120%, 0);
+  }
+}
+
+@keyframes disappearToBottom {
+  0% {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+  100% {
+    display: none;
+    opacity: 0;
+    transform: translate(-50%, 120%);
+  }
+}

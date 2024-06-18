@@ -1,0 +1,64 @@
+.tooltip {
+  position: absolute;
+  min-width: 248px;
+  padding: 1em 0.75em;
+  font-size: 11px;
+  border-radius: 2px;
+  background-color: var(--GRAY-OPACITY-2);
+  color: var(--DARK-GRAY-2);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 3px 3px 1px var(--GRAY-OPACITY-7);
+
+  &::before {
+    position: absolute;
+    content: '';
+    border: 5px solid var(--GRAY-OPACITY-2);
+  }
+}
+
+.orientation-top {
+  &::before {
+    top: -10px;
+    border: {
+      right-color: transparent;
+      left-color: transparent;
+      top-color: transparent;
+    }
+  }
+}
+
+.orientation-bottom {
+  &::before {
+    bottom: -10px;
+    border: {
+      right-color: transparent;
+      left-color: transparent;
+      bottom-color: transparent;
+    }
+  }
+}
+
+.orientation-right {
+  &::before {
+    right: -10px;
+    border: {
+      right-color: transparent;
+      bottom-color: transparent;
+      top-color: transparent;
+    }
+  }
+}
+
+.orientation-left {
+  &::before {
+    left: -10px;
+    border: {
+      bottom-color: transparent;
+      left-color: transparent;
+      top-color: transparent;
+    }
+  }
+}

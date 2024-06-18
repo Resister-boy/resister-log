@@ -1,0 +1,56 @@
+.container-appear {
+  height: 100%;
+  background-color: var(--GRAY-OPACITY-1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-right: 1px solid var(--GRAY-OPACITY-2);
+  animation: appear;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.container-disappear {
+  height: 100%;
+  background-color: var(--GRAY-OPACITY-1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid var(--GRAY-OPACITY-2);
+  animation: disappear;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appear {
+  0% {
+    width: 0rem;
+    opacity: 0;
+    transform: translate(-100%, 0);
+  }
+  5% {
+    width: 0rem;
+    opacity: 0;
+    transform: translate(5.5rem, 0);
+  }
+  100% {
+    width: 30rem;
+    opacity: 1;
+    transform: translate(calc(0% + 5.5rem), 0);
+  }
+}
+
+@keyframes disappear {
+  0% {
+    width: 30rem;
+    opacity: 1;
+    transform: translate(0%, 0);
+  }
+  100% {
+    width: 0rem;
+    opacity: 0;
+    transform: translate(calc(-100% - 5.5rem), 0);
+  }
+}

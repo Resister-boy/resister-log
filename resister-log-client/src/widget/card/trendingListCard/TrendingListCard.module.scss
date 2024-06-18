@@ -1,0 +1,54 @@
+.container {
+  width: 24rem;
+  height: 36rem;
+  margin-top: 6rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .title-text {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-left: 0.4rem;
+    }
+
+    .icon-book {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+
+    .icon-code {
+      width: 1.9rem;
+      height: 1.9rem;
+    }
+
+    .icon-note {
+      width: 1.7rem;
+      height: 1.7rem;
+    }
+
+    .icon-medal {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    .icon-topic {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+
+  .inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-color: var(--GRAY-OPACITY-1);
+    margin-top: 0.6rem;
+  }
+}

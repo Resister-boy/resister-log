@@ -1,0 +1,56 @@
+.container {
+  width: 100%;
+  min-width: 27.5rem;
+  height: 3.65rem;
+  position: relative;
+
+  .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, calc(-100% + -0.2rem));
+  }
+
+  .input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--LIGHT-GRAY-1);
+    padding-left: 3.6rem;
+    outline: none;
+
+    &:focus {
+      border: 2px solid var(--PRIMARY);
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(1rem, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .password {
+    position: absolute;
+    padding: 0.4rem;
+    top: 50%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-radius: 4px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--GRAY-OPACITY-2);
+    }
+  }
+}

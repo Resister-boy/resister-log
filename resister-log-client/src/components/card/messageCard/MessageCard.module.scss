@@ -1,0 +1,133 @@
+.container {
+  width: 28rem;
+  height: 8.5rem;
+  background-color: var(--LIGHT);
+  position: fixed;
+  bottom: 5.5rem;
+  right: 2.5rem;
+  z-index: 999;
+  box-shadow: 0px 6px 6px var(--GRAY-OPACITY-9);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  animation-name: appearIn;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  padding: 1.2rem;
+
+  .title-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+
+      .title {
+        color: var(--DARK-GRAY-1);
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-align: start;
+      }
+    }
+
+    .title {
+      color: var(--DARK-GRAY-1);
+      font-size: 1.3rem;
+      font-weight: 600;
+      text-align: start;
+    }
+  }
+
+  .subTitle-inner {
+    width: 100%;
+    margin-top: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .subTitle {
+      color: var(--DARK-GRAY-2);
+      font-size: 1.25rem;
+      font-weight: 400;
+      text-align: start;
+      white-space: wrap;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -0px;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: var(--PRIMARY);
+    animation-name: longer;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  .button-container {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    z-index: 99;
+    background-color: transparent;
+
+    &:hover {
+      background-color: var(--GRAY-OPACITY-4);
+      cursor: pointer;
+    }
+
+    .svg-icon {
+      width: 12px;
+      height: 12px;
+      stroke: var(--DARK-GRAY-2);
+    }
+  }
+}
+
+.container-hide {
+  animation-name: appearOut;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes appearIn {
+  0% {
+    display: none;
+    transform: translateX(120%);
+  }
+  100% {
+    display: block;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appearOut {
+  0% {
+    display: block;
+    transform: translateX(0%);
+  }
+  100% {
+    display: none;
+    transform: translateX(120%);
+  }
+}

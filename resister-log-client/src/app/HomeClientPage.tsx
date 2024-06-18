@@ -6,7 +6,7 @@ const cn = classNames.bind(styles)
 
 const HomeClientPage = () => {
   return (
-    <section></section>
+    <section className={cn('container')}></section>
   )
 }
 

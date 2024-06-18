@@ -29,6 +29,7 @@ export default function RootLayout({
           <ReduxProvider>
             <BaseProvider>
               {children}
+              <div id="modal-root" />
             </BaseProvider>
           </ReduxProvider>
         </NextAuthProvider>

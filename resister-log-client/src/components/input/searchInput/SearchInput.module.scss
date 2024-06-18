@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+  height: 3.65rem;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  .input {
+    width: 100%;
+    height: 100%;
+    padding-left: 3.2rem;
+    outline: none;
+    font-size: 1.3rem;
+    border: {
+      left: none;
+      right: none;
+      top: none;
+      bottom: 1px solid var(--LIGHT-GRAY-1);
+    }
+
+    ::placeholder {
+      font-size: 1.3rem;
+    }
+  }
+}

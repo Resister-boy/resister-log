@@ -42,7 +42,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
     if (
       pathname === '/login' ||
       pathname === '/signup' ||
-      pathname === '/reset'
+      pathname === '/reset' ||
+      pathname === '/create'
     )
       return false;
     return true;
@@ -52,7 +53,8 @@ const Layout = ({ children }: { children: ReactNode }) => {
     if (
       pathname === '/login' ||
       pathname === '/signup' ||
-      pathname === '/reset'
+      pathname === '/reset' ||
+      pathname === '/create'
     )
       return false;
     return true;
@@ -62,7 +64,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
     <Fragment>
       {showHeader && <Header />}
       {children}
-      {/* {toastInfo.length &&
+      {toastInfo.length !== 0 &&
         toastInfo.map((toast: IToastState) => {
           return (
             <ToastCard
@@ -73,7 +75,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
               direction={toast.toast.direction}
             />
           );
-        })} */}
+        })}
       {messageInfo.message && (
         <MessageCard
           title={messageInfo.message.title}

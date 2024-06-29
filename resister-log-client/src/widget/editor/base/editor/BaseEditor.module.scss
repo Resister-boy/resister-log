@@ -1,0 +1,15 @@
+.container {
+  width: 70%;
+  height: 100%;
+  min-height: 100vh;
+  
+  .editor-shell {
+    margin: 42px auto 0px auto;
+    border-radius: 2px;
+    max-width: 1100px;
+    color: #000;
+    position: relative;
+    line-height: 1.7;
+    font-weight: 400;
+  }
+}

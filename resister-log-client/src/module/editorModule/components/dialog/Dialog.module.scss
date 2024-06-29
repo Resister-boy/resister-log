@@ -1,0 +1,17 @@
+.dialog-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin-top: 20px;
+}
+
+.dialog-button-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  margin-top: 20px;
+
+  button {
+    margin-bottom: 20px;
+  }
+}

@@ -3,6 +3,11 @@ export type CategoryType = {
   title: string;
 };
 
+export type SeriesType = {
+  id: string;
+  title: string;
+};
+
 export type TagType = string;
 
 export type LanguageType = {
@@ -14,3 +19,5 @@ export type IsPublicType = {
   value: boolean;
   title: string;
 };
+
+export type EditorType = 'Editor' | 'Markdown';

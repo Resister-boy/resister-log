@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  height: 5.85rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid var(--GRAY-OPACITY-9);
+  background-color: var(--LIGHT);
+
+  .button {
+    width: 9.25rem;
+    height: 2.85rem;
+
+    &:last-child {
+      margin-left: .4rem;
+    }
+  }
+}

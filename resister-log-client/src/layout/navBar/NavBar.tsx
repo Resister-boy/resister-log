@@ -13,7 +13,11 @@ import {
   getSideState,
   OPEN_SIDE_BAR,
 } from '@/state/slice/sideSlice';
-import { CLOSE_NAV_BAR, getNavState, REVERSE_NAV_BAR } from '@/state/slice/navigationSlice';
+import {
+  CLOSE_NAV_BAR,
+  getNavState,
+  REVERSE_NAV_BAR,
+} from '@/state/slice/navigationSlice';
 
 const cn = classNames.bind(styles);
 
@@ -21,7 +25,7 @@ const NavBar = () => {
   const dispatch = useDispatch();
   const pathname = usePathname();
   const sideBar = useSelector(getSideState);
-  const navBar = useSelector(getNavState)
+  const navBar = useSelector(getNavState);
   const router = useRouter();
 
   const homeActive = useMemo(() => {
@@ -99,7 +103,7 @@ const NavBar = () => {
           className={cn('nav-ctrl-item')}
           onClick={() => {
             dispatch(CLOSE_SIDE_BAR());
-            dispatch(REVERSE_NAV_BAR())
+            dispatch(REVERSE_NAV_BAR());
           }}
         >
           {navBar.status === 'grow' ? (

@@ -1,16 +1,16 @@
-import Image from 'next/image'
-import React from 'react'
-import ResisterboyImage from '@/assets/image/resisterboy.png'
-import styles from '@/components/Logo/Logo.module.scss'
-import classNames from 'classnames/bind'
-import Link from 'next/link'
+import Image from 'next/image';
+import React from 'react';
+import ResisterboyImage from '@/assets/image/resisterboy.png';
+import styles from '@/components/Logo/Logo.module.scss';
+import classNames from 'classnames/bind';
+import Link from 'next/link';
 
-const cn = classNames.bind(styles)
+const cn = classNames.bind(styles);
 
 type LogoProps = {
   withImage?: boolean;
   withText?: boolean;
-}
+};
 
 const Logo = ({ withImage = true, withText = true }: LogoProps) => {
   return (
@@ -19,7 +19,7 @@ const Logo = ({ withImage = true, withText = true }: LogoProps) => {
         {withImage && (
           <Image
             src={ResisterboyImage}
-            alt='Logo'
+            alt="Logo"
             width={200}
             height={200}
             className={cn('image')}
@@ -28,8 +28,7 @@ const Logo = ({ withImage = true, withText = true }: LogoProps) => {
         {withText && <span className={cn('text')}>RESISTER-BOY.LOG</span>}
       </div>
     </Link>
+  );
+};
 
-  )
-}
-
-export default Logo
+export default Logo;

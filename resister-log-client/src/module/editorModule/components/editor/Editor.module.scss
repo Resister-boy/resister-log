@@ -1,0 +1,16 @@
+.editor {
+  border: 0;
+  font-size: 15px;
+  display: block;
+  position: relative;
+  outline: 0;
+  padding: 8px 28px 40px 8px;
+  min-height: 150px;
+}
+
+@media (max-width: 1025px) {
+  .editor {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { Fragment, ReactNode } from 'react';
 import styles from '@/components/button/baseButton/BaseButton.module.scss';
 import classNames from 'classnames/bind';
 
@@ -7,35 +7,38 @@ const cn = classNames.bind(styles);
 type Props = {
   name: string;
   type: 'fill' | 'outline';
+  theme: 'gray' | 'primary';
   onClick: () => void;
   disabled?: boolean;
   loading?: boolean;
   children?: ReactNode;
-  classNames?: string;
+  classNames?: string[];
+  bgColor?: string;
 };
 
 const BaseButton = ({
   name,
   onClick,
   type,
+  theme,
   disabled = false,
   loading = false,
   children = null,
-  classNames = '',
+  classNames = ['radius-4'],
 }: Props) => {
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className={cn(`container-${type}`, classNames)}
+      className={cn(`container-${type}-${theme}`, ...classNames)}
     >
       {loading ? (
         <></>
       ) : (
-        <div>
-          {children && <span>{children}</span>}
+        <Fragment>
+          {children && children}
           {name}
-        </div>
+        </Fragment>
       )}
     </button>
   );

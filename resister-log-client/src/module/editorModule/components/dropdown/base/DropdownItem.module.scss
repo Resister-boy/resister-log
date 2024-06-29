@@ -1,0 +1,33 @@
+.item-container {
+  min-width: 16rem;
+  padding: 3px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  margin: 0px 6px;
+
+  &:last-child {
+    margin-bottom: 6px;
+  }
+
+  &:first-child {
+    margin-top: 6px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #eee;
+  }
+}
+
+.item-container-active {
+  min-width: 16rem;
+  padding: 3px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 8px;
+  margin: 0px 6px;
+  background-color: #dfe8fa4d;
+}

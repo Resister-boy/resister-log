@@ -1,0 +1,25 @@
+.container {
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+
+  .inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 14px;
+
+    .text {
+      font-size: 12px;
+      margin-left: 6px;
+      margin-top: 2px;
+    }
+  }
+
+  &:hover {
+    background-color: #eee;
+  }
+}

@@ -4,7 +4,7 @@ import modalSlice from '@/state/slice/modalSlice';
 import sideSlice from '@/state/slice/sideSlice';
 import toastSlice from '@/state/slice/toastSlice';
 import messageSlice from '@/state/slice/messageSlice';
-import contentSlice from '@/state/slice/contentSlice';
+import createPostSlice from '@/state/slice/createPostSlice';
 import navigationSlice from '@/state/slice/navigationSlice';
 
 const rootReducer = combineReducers({
@@ -12,8 +12,8 @@ const rootReducer = combineReducers({
   side: sideSlice,
   toast: toastSlice,
   message: messageSlice,
-  content: contentSlice,
-  nav: navigationSlice
+  createPost: createPostSlice,
+  nav: navigationSlice,
 });
 
 const store = configureStore({

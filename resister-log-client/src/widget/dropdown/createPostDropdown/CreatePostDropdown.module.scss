@@ -12,13 +12,25 @@
     background-color: transparent;
     outline: none;
     border: none;
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 7.6rem;
+    height: 2.6rem;
     border-radius: 4px;
+    
+    .header-title {
+      margin-left: .3rem;
+    }
 
     &:hover {
       cursor: pointer;
-      background-color: var(--LIGHT-GRAY-2);
+      background-color: var(--PRIMARY-OPACITY-1);
+      border: 1px solid var(--PRIMARY-OPACITY-7);
+    }
+
+    &:active {
+      cursor: pointer;
+      background-color: var(--PRIMARY-OPACITY-1);
+      border: 1px solid var(--PRIMARY-OPACITY-7);
+      box-shadow: 0px 1px 1px 1px var(--PRIMARY-OPACITY-5);
     }
   }
 

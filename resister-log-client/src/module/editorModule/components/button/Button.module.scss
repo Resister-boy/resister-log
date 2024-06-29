@@ -1,0 +1,31 @@
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 0px;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+.button-small {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+
+.button-disabled {
+  cursor: not-allowed;
+
+  &:hover {
+    background-color: #eee;
+  }
+}

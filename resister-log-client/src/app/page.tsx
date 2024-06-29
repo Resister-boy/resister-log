@@ -1,10 +1,8 @@
-import React from 'react'
-import HomeClientPage from '@/app/HomeClientPage'
+import React from 'react';
+import HomeClientPage from '@/app/HomeClientPage';
 
 const HomePage = () => {
-  return (
-    <HomeClientPage />
-  )
-}
+  return <HomeClientPage />;
+};
 
-export default HomePage
+export default HomePage;
